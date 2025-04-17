@@ -55,6 +55,9 @@ D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.exe.
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.exe
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ccf6c20ed08bb04eb342c2e84f188258d115aeeb
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.exe
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.pdb
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Library.dll
@@ -71,5 +74,8 @@ D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Form
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIMainInterface.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Properties.Resources.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 =======
 >>>>>>> c4c40e19608aef3f674569dba55f5a23ec172e7c
+=======
+>>>>>>> ccf6c20ed08bb04eb342c2e84f188258d115aeeb
