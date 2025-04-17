@@ -11,3 +11,8 @@ D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Or
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.pdb
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.dll
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.pdb
+D:\ShampanDBApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.dll
+D:\ShampanDBApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.pdb
+D:\ShampanDBApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.csprojResolveAssemblyReference.cache
+D:\ShampanDBApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.dll
+D:\ShampanDBApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.pdb
