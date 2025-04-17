@@ -117,21 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="LineNo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="MonthName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PeriodStart.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PeriodEnd.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Lock.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -543,21 +528,6 @@
         1VkIUEUAEUCIKBwi6zWQM4BQQtIIKdx+fwZty+fQtWIOve5rkctX0exUaQ4rRebOLRy84vP18Op/wPEK
         gpATUsGBE6STyLoBiGtmILmTefWCZNkmsW3UPuZZ5p64576OpFzSCbhk9wMnTxHwL1cdZ7CbPEbEAAAA
         AElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAIAAAA21aCOAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
-        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB60lE
-        QVQoUwHgAR/+AP/9//////n7/bbU6mqjz2SczGmk1DyJw0mcx7PW5Pj8/P////7//wD////z+Ptvos4o
-        cLmEuOS04Pa64PXD4vpmnNoBXqxopcj2+fn///8A+v/9dKTOCFKjXKbfksLna6fXS5jQWqLXe7rnSZLU
-        AE6girDN////AMHY7AVIoTR5uqnR6KHH26zP4nWw2iF9wTSLy0KTzhxlsRJRn9/m8QBpoM4BLZJytdmQ
-        u9QQbcBGkcqSwNUticMFcr0cisIpa68FOZ+0vNcAJXe9HTGQdr/fiL7XAFevJX6+rtLhSYS9AE2nCmq0
-        KFylFUWdkJvGABd2vCsshyR1uIq20qDF3Ye00sHS4M/Y51qGvAdZrhpDmSZJnJ+iygBKm8wdLI0XVKkd
-        brdUisQ6eroiaq+Xu9Ly8/KZv9omTJ8WMpbMz+EAsdbqA0KfIFWqDmq4AF2rBGOvAGK0AVurYZfFk7fW
-        LliqRlqf7e3yAPX9+1mdyABGoxJuuBd1uBFvtxNttwtmsgNsuQdhritQlMnI2v///wD////x9/lrncUE
-        UqQEZrwaecAje74mf8MRX7BAXaLDwtb//vv9//8A/f/+////+Pr7ztjnfpvGTnWyV3Gya3y3pa7N6ebt
-        ///////8/v77bn4eb9Rc3RcAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="bgwNew.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

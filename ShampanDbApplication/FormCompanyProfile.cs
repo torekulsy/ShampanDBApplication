@@ -48,85 +48,9 @@ namespace ShampanDbApplication
 
          #endregion
 
-        private void FiscalYearSave()
-        {
-            try
-            {
-                fiscalyears.Clear();
-                for (int i = 0; i < dgvFYear.RowCount; i++)
-                {
-                    FiscalYearVM detail = new FiscalYearVM();
+      
 
-                    detail.FiscalYearName = dtpFYearStart.Value.ToString("dd/MMM/yyyy") + " To " + dtpFYearEnd.Value.ToString("dd/MMM/yyyy");
-                    detail.CurrentYear = dtpFYearEnd.Value.ToString("yyyy");
-                    detail.PeriodID = Convert.ToDateTime(dgvFYear.Rows[i].Cells["PeriodStart"].Value).ToString("MMyyyy");
-                    detail.PeriodName = Convert.ToDateTime(dgvFYear.Rows[i].Cells["MonthName"].Value).ToString("MMMM-yyyy");
-                    detail.PeriodStart = Convert.ToDateTime(dgvFYear.Rows[i].Cells["PeriodStart"].Value).ToString("yyyy-MMM-dd");
-                    detail.PeriodEnd = Convert.ToDateTime(dgvFYear.Rows[i].Cells["PeriodEnd"].Value).ToString("yyyy-MMM-dd");
-                    detail.PeriodLock = Convert.ToString("N");
-                    detail.GLLock = Convert.ToString("N");
-                    detail.CreatedBy = Program.CurrentUser;
-                    detail.CreatedOn = DateTime.Now.ToString("yyyy-MMM-dd HH:mm:ss");
-                    detail.LastModifiedBy = Program.CurrentUser;
-                    detail.LastModifiedOn = DateTime.Now.ToString("yyyy-MMM-dd HH:mm:ss");
-                    fiscalyears.Add(detail);
-
-                }
-
-            }
-            #region catch
-             catch (Exception ex)
-            {
-                string exMessage = ex.Message;
-                if (ex.InnerException != null)
-                {
-                    exMessage = exMessage + Environment.NewLine + ex.InnerException.Message + Environment.NewLine +
-                                ex.StackTrace;
-
-                }
-                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);               
-            }
-            #endregion
-           
-        }
-
-        private void AddFiscalYear()
-        {
-            try
-            {
-                dtpFYearStart.Value = Convert.ToDateTime(dtpFYearStart.Value.ToString("dd/MMM/yyyy"));
-                dgvFYear.Rows.Clear();
-                for (int j = 0; j < Convert.ToInt32(12); j++)
-                {
-                    DateTime a =
-                        Convert.ToDateTime(dtpFYearStart.Value.ToString("MMMM-yyyy")).AddMonths(j);
-
-
-                    DataGridViewRow NewRow = new DataGridViewRow();
-                    dgvFYear.Rows.Add(NewRow);
-
-                    dgvFYear.Rows[j].Cells["LineNo"].Value = Convert.ToDecimal(j + 1);
-                    dgvFYear.Rows[j].Cells["MonthName"].Value = Convert.ToDateTime(dtpFYearStart.Value.ToString("MMMM-yyyy")).AddMonths(j);
-                    dgvFYear.Rows[j].Cells["PeriodStart"].Value = Convert.ToDateTime(dtpFYearStart.Value.ToString("dd/MMM/yyyy")).AddMonths(j);
-                    dgvFYear.Rows[j].Cells["PeriodEnd"].Value = Convert.ToDateTime(dtpFYearStart.Value.ToString("dd/MMM/yyyy")).AddMonths(j + 1).AddDays(-1);
-
-                }
-            }
-            #region catch
-            catch (Exception ex)
-            {
-                string exMessage = ex.Message;
-                if (ex.InnerException != null)
-                {
-                    exMessage = exMessage + Environment.NewLine + ex.InnerException.Message + Environment.NewLine +
-                                ex.StackTrace;
-
-                }
-                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                
-            }
-            #endregion
-        }
+    
 
         private SysDBInfoVMTemp connVM = new SysDBInfoVMTemp();
 
@@ -152,7 +76,7 @@ namespace ShampanDbApplication
                    return;
                }
              
-               progressBar1.Visible = true;
+             
                btnNewCompany.Enabled = false;
 
               string  NextID = "0";
@@ -161,33 +85,13 @@ namespace ShampanDbApplication
                companyProfiles = new CompanyProfileVM();
                companyProfiles.CompanyID = NextID;
                companyProfiles.CompanyName = txtCompanyName.Text.Trim();
-               companyProfiles.CompanyLegalName = txtCompanyLegalName.Text.Trim();
-               companyProfiles.Address1 = txtAddress1.Text.Trim();
+               companyProfiles.CompanyLegalName = txtCompanyLegalName.Text.Trim();              
                companyProfiles.Address2 = "-";
-               companyProfiles.Address3 = "-";
-               companyProfiles.City = txtCity.Text.Trim();
-               companyProfiles.ZipCode = txtZipCode.Text.Trim();
-               companyProfiles.TelephoneNo = txtTelephoneNo.Text.Trim();
-               companyProfiles.FaxNo = txtFaxNo.Text.Trim();
-               companyProfiles.Email = txtEmail.Text.Trim();
-               companyProfiles.ContactPerson = txtContactPerson.Text.Trim();
-               companyProfiles.ContactPersonDesignation = txtContactPersonDesignation.Text.Trim();
-               companyProfiles.ContactPersonTelephone = txtContactPersonTelephone.Text.Trim();
-               companyProfiles.ContactPersonEmail = txtContactPersonEmail.Text.Trim();
-               companyProfiles.TINNo = txtTINNo.Text.Trim();
-               companyProfiles.VatRegistrationNo = txtVatRegistrationNo.Text.Trim();
-               companyProfiles.Comments = txtComments.Text.Trim();
+               companyProfiles.Address3 = "-";                      
                companyProfiles.ActiveStatus = "Y";// active status
                companyProfiles.CreatedBy = Program.CurrentUser;
                companyProfiles.CreatedOn = DateTime.Now.ToString("yyyy-MMM-dd HH:mm:ss");
-               companyProfiles.StartDateTime = dtpStartDate.Value.ToString("yyyy-MMM-dd HH:mm:ss");
-               companyProfiles.FYearStart = dtpFYearStart.Value.ToString("yyyy-MMM-dd");
-               companyProfiles.FYearEnd = dtpFYearEnd.Value.ToString("yyyy-MMM-dd");
-               companyProfiles.BIN = txtBIN.Text;
-               companyProfiles.Section = txtSection.Text.Trim();
-                              
-               AddFiscalYear();
-               FiscalYearSave();
+               companyProfiles.CompanyType = cmbCompanyType.SelectedItem.ToString();
                               
                //DBName = txtCompanyName.Text.Replace(".", " ");
                //DBName = DBName.Replace(".", " ");
@@ -202,7 +106,7 @@ namespace ShampanDbApplication
                DBName = DBName.Replace("#", "_");
                DBName = DBName.Replace(",", "_");
                DBName = DBName.Replace("'", "_");
-               progressBar1.Visible = true;
+              
                btnNewCompany.Enabled = false;
                bgwNew.RunWorkerAsync();
                            
@@ -315,7 +219,7 @@ namespace ShampanDbApplication
            finally
            {
                ChangeData = false;
-               progressBar1.Visible = false;
+              
                btnNewCompany.Enabled = true;
            }
 
@@ -377,34 +281,13 @@ namespace ShampanDbApplication
            txtCompanyID.Text = "";
            txtCompanyName.Text = "";
            txtCompanyLegalName.Text = "";
-           txtAddress1.Text = "";
-           //txtAddress2.Text = "-";
-           //txtAddress3.Text = "-";
-           txtCity.Text = "";
-           txtZipCode.Text = "";
-           txtTelephoneNo.Text = "";
-           txtFaxNo.Text = "";
-           txtEmail.Text = "";
-           txtContactPerson.Text = "";
-           txtContactPersonDesignation.Text = "";
-           txtContactPersonTelephone.Text = "";
-           txtContactPersonEmail.Text = "";
-           txtTINNo.Text = "";
-           txtVatRegistrationNo.Text = "";
-           txtComments.Text = "";
+          
 
            DateTime now = DateTime.Now;
            DateTime startDate = new DateTime(now.Year, now.Month, 1);
 
-           dtpStartDate.Value = startDate;
-           dtpFYearStart.Value = startDate;
-       }
-       private void dtpFYearStart_ValueChanged(object sender, EventArgs e)
-       {
-           dtpFYearEnd.Value = dtpFYearStart.Value.AddYears(1).AddDays(-1);
-           ChangeData = true;
-
-       }
+         
+       }     
      
        private void dtpFYearEnd_ValueChanged(object sender, EventArgs e)
        {
@@ -452,5 +335,6 @@ namespace ShampanDbApplication
            }
            #endregion
        }
+
     }
 }

@@ -54,28 +54,3 @@ D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\obj\Debug\S
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.exe.config
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.exe
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ccf6c20ed08bb04eb342c2e84f188258d115aeeb
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.exe
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.pdb
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Library.dll
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Ordinary.dll
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFViewModel.dll
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Library.pdb
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Ordinary.pdb
-D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFViewModel.pdb
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csprojResolveAssemblyReference.cache
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormCompanyProfile.resources
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormLogIn.resources
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormSuperInfo.resources
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormSupperAdministrator.resources
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIMainInterface.resources
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Properties.Resources.resources
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-=======
->>>>>>> c4c40e19608aef3f674569dba55f5a23ec172e7c
-=======
->>>>>>> ccf6c20ed08bb04eb342c2e84f188258d115aeeb
