@@ -1,0 +1,13 @@
+D:\DB\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.dll
+D:\DB\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.pdb
+D:\DB\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.csprojResolveAssemblyReference.cache
+D:\DB\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.dll
+D:\DB\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\bin\Debug\PFServer.Ordinary.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Ordinary\obj\Debug\PFServer.Ordinary.pdb

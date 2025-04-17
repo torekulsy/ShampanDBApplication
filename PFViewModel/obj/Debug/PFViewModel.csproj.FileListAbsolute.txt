@@ -1,0 +1,14 @@
+D:\DB\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.dll
+D:\DB\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.pdb
+D:\DB\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.csprojResolveAssemblyReference.cache
+D:\DB\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.dll
+D:\DB\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.csprojResolveAssemblyReference.cache
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.pdb
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.dll
+D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.pdb
