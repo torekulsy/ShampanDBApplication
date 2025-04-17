@@ -30,7 +30,10 @@ D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Library.dll
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Library.pdb
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Ordinary.dll
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFViewModel.dll
+<<<<<<< HEAD
+=======
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\SymphonySofttech.Decrypt.dll
+>>>>>>> ccf6c20ed08bb04eb342c2e84f188258d115aeeb
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\SymphonySofttech.Utilities.dll
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFViewModel.pdb
 D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Ordinary.pdb
