@@ -26,3 +26,14 @@ D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Li
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Library\obj\Debug\PFServer.Library.csprojResolveAssemblyReference.cache
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Library\obj\Debug\PFServer.Library.dll
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFServer.Library\obj\Debug\PFServer.Library.pdb
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Library.dll
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Library.pdb
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Ordinary.dll
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFViewModel.dll
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\SymphonySofttech.Decrypt.dll
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\SymphonySofttech.Utilities.dll
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFViewModel.pdb
+D:\ShampanDBApplication\PFServer.Library\bin\Debug\PFServer.Ordinary.pdb
+D:\ShampanDBApplication\PFServer.Library\obj\Debug\PFServer.Library.csprojResolveAssemblyReference.cache
+D:\ShampanDBApplication\PFServer.Library\obj\Debug\PFServer.Library.dll
+D:\ShampanDBApplication\PFServer.Library\obj\Debug\PFServer.Library.pdb
