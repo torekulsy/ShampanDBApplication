@@ -51,3 +51,6 @@ D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\ShampanDbAp
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.pdb
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIMainInterface.resources
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIMainInterface.resources
+D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.exe.config
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.exe
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.pdb
