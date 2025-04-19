@@ -12175,30 +12175,6 @@ GO
 
                     #region CreateTable Back
                     sqlText = @"
-
-CREATE TABLE [dbo].[COAFaisal](
-	[SL] [int] NOT NULL,
-	[GroupId] [int] NULL,
-	[TypeOfReport] [nvarchar](255) NULL,
-	[GroupType] [nvarchar](255) NULL,
-	[AccountGroup] [nvarchar](255) NULL,
-	[COAId] [int] NULL,
-	[AccountName] [nvarchar](255) NULL,
-	[AccountCode] [nvarchar](255) NULL,
-	[AccountNature] [nvarchar](255) NULL,
-	[TransactionType] [varchar](100) NULL,
-	[TransType] [varchar](100) NULL,
- CONSTRAINT [PK_COAFaisal] PRIMARY KEY CLUSTERED 
-(
-	[SL] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[COAFinal]    Script Date: 4/17/2025 5:56:43 PM ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
 CREATE TABLE [dbo].[COAFinal](
 	[SL] [float] NOT NULL,
 	[TypeOfReport] [nvarchar](255) NULL,
@@ -12754,18 +12730,17 @@ GO
                     #endregion TableDefaultData Back
 
                     #region TableDefaultData Back
-                    sqlText = @"USE [TIB_PF_DB]
+                    sqlText = @"
 
-INSERT [dbo].[COAFaisal] ([SL], [GroupId], [TypeOfReport], [GroupType], [AccountGroup], [COAId], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (1, 4, N'Balance Sheet', N'Assets', N'Fixed Assets', 14, N'Property Plant and Equipment', N'10100', N'Dr', N'PF', N'PF')
-INSERT [dbo].[COAFaisal] ([SL], [GroupId], [TypeOfReport], [GroupType], [AccountGroup], [COAId], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (2, 4, N'Balance Sheet', N'Assets', N'Fixed Assets', 15, N'Provident Fund Management Software', N'10110', N'Dr', N'PF', N'PF')
-INSERT [dbo].[COAFaisal] ([SL], [GroupId], [TypeOfReport], [GroupType], [AccountGroup], [COAId], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (3, 2, N'Balance Sheet', N'Assets', N'Cash and Cash Equivalents', 3, N'Cash in hand', N'15100', N'Dr', N'PF', N'PF')
-INSERT [dbo].[COAFaisal] ([SL], [GroupId], [TypeOfReport], [GroupType], [AccountGroup], [COAId], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (4, 2, N'Balance Sheet', N'Assets', N'Cash and Cash Equivalents', 13, N'Standard Chartered Bank', N'15110', N'Dr', N'PF', N'PF')
-
-GO
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (1, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Advance against maintenance service', N'A.2.10', N'Dr', N'PF', N'PF')
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (2, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Advance against PF Software', N'A.2.7', N'Dr', N'PF', N'PF')
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (3, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Cash in hand', N'A.2.11', N'Dr', N'PF', N'PF')
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (4, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Interest Receivable on Investment', N'A.2.3', N'Dr', N'PF', N'PF')
+INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (5, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Investments', N'A.2.2', N'Dr', N'PF', N'PF')
+INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (6, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Loan to the Members', N'A.2.1', N'Dr', N'PF', N'PF')
+INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (7, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Receivable for Investment Encashment', N'A.2.9', N'Dr', N'PF', N'PF')
+INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (8, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Receivable from BSP-SCB', N'A.2.13', N'Dr', N'PF', N'PF')
+INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (9, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Receivable from Employee', N'A.2.12', N'Dr', N'PF', N'PF')
 
 GO
 SET IDENTITY_INSERT [dbo].[COAGroups] ON 
@@ -12774,6 +12749,12 @@ INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL]
 INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (2, 1, 1, 100, N'Cash and Cash Equivalents', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
 INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (3, 2, 2, 500, N'Depreciation Expense', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
 INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (4, 1, 1, 100, N'Fixed Assets', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
+INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (5, 1, 1, 100, N'Other Current Assets', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
+INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (6, 1, 3, 200, N'Other Current Liabilities', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
+INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (7, 2, 2, 500, N'Other Expenses', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
+INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (8, 1, 3, 200, N'Provision for Income Taxes', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
+INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (9, 2, 4, 400, N'Revenue', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
+INSERT [dbo].[COAGroups] ([Id], [COATypeOfReportId], [COAGroupTypeId], [GroupSL], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (10, 3, 5, 300, N'Shareholders'' Equity', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
 
 SET IDENTITY_INSERT [dbo].[COAGroups] OFF
 GO
@@ -12790,7 +12771,6 @@ INSERT [dbo].[COAs] ([Id], [COASL], [COAGroupId], [Code], [Name], [Nature], [Ope
 INSERT [dbo].[COAs] ([Id], [COASL], [COAGroupId], [Code], [Name], [Nature], [OpeningBalance], [TransType], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [IsRetainedEarning], [TransactionType], [IsNetProfit], [IsDepreciation], [COAType]) VALUES (5, NULL, 2, N'15200', N'Investments', N'Dr', CAST(0.00 AS Decimal(18, 2)), N'PF', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, NULL, N'PF', NULL, NULL, NULL)
 INSERT [dbo].[COAs] ([Id], [COASL], [COAGroupId], [Code], [Name], [Nature], [OpeningBalance], [TransType], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [IsRetainedEarning], [TransactionType], [IsNetProfit], [IsDepreciation], [COAType]) VALUES (6, NULL, 2, N'15210', N'Loan to the Members', N'Dr', CAST(0.00 AS Decimal(18, 2)), N'PF', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, NULL, N'PF', NULL, NULL, NULL)
 INSERT [dbo].[COAs] ([Id], [COASL], [COAGroupId], [Code], [Name], [Nature], [OpeningBalance], [TransType], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [IsRetainedEarning], [TransactionType], [IsNetProfit], [IsDepreciation], [COAType]) VALUES (7, NULL, 1, N'17100', N'Receivable for Investment Encashment', N'Dr', CAST(0.00 AS Decimal(18, 2)), N'PF', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, NULL, N'PF', NULL, NULL, NULL)
-
 GO
 INSERT [dbo].[COAType] ([Id], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (1, N'Asset', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
 INSERT [dbo].[COAType] ([Id], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (2, N'Liability', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
@@ -12802,6 +12782,7 @@ INSERT [dbo].[COATypeOfReport] ([Id], [TypeOfReportSL], [TypeOfReportShortName],
 INSERT [dbo].[COATypeOfReport] ([Id], [TypeOfReportSL], [TypeOfReportShortName], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (2, 500, N'IS', N'Income Statement', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
 INSERT [dbo].[COATypeOfReport] ([Id], [TypeOfReportSL], [TypeOfReportShortName], [Name], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TransactionType], [TransType]) VALUES (3, 300, N'RE', N'Retained Earning', N'', 1, 0, N'Admin', N'19000101', N'Local', NULL, NULL, NULL, N'PF', N'PF')
 GO
+
 
  ";
                     #endregion TableDefaultData Back
