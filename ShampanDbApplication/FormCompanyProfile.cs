@@ -48,35 +48,12 @@ namespace ShampanDbApplication
 
          #endregion
 
-      
-
-    
-
-        private SysDBInfoVMTemp connVM = new SysDBInfoVMTemp();
+       private SysDBInfoVMTemp connVM = new SysDBInfoVMTemp();
 
        private void btnNewCompany_Click(object sender, EventArgs e)
        {
            try
-           {             
-               if (DialogResult.No != MessageBox.Show("Is Fiscal Year Okay?", this.Text, MessageBoxButtons.YesNo,
-                                                          MessageBoxIcon.Question,
-                                                          MessageBoxDefaultButton.Button2))
-               {
-
-               }
-               else
-               {
-                   return;
-               }
-               if (txtCompanyID.Text != "")
-               {
-                   MessageBox.Show(
-                       "Data already saved" + "\n" + "To change click update button or for new click refresh button",
-                       this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   return;
-               }
-             
-             
+           {                                        
                btnNewCompany.Enabled = false;
 
               string  NextID = "0";
@@ -108,9 +85,7 @@ namespace ShampanDbApplication
                DBName = DBName.Replace("'", "_");
               
                btnNewCompany.Enabled = false;
-               bgwNew.RunWorkerAsync();
-                           
-
+               bgwNew.RunWorkerAsync();                           
            }
            #region catch
             catch (Exception ex)
@@ -136,10 +111,7 @@ namespace ShampanDbApplication
            try
            {
                #region Statement
-
                #region Statement
-
-
                SAVE_DOWORK_SUCCESS = false;
                sqlResults = new string[3];
                CommonDAL commonDal = new CommonDAL();
@@ -153,8 +125,6 @@ namespace ShampanDbApplication
                #endregion
 
                // Start DoWork
-
-
 
                // End DoWork
 
