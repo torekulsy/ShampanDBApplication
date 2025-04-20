@@ -13,7 +13,9 @@ namespace PFViewModel.DTOs
         public static string SysPassword = "S123456_";// { get; set; }
         public static string SysdataSource = ".";// { get; set; }
 
-        public static bool IsWindowsAuthentication = false;// { get; set; }
+        public static string DatabaseName = " ";// { get; set; }
+
+        public static bool IsWindowsAuthentication =true;
 
     }
 }

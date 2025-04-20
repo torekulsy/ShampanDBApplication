@@ -111,21 +111,13 @@ namespace PFServer.Library
                 //SysDBInfoVM.SysPassword = connTemp.SysPassword;
                 //SysDBInfoVM.SysUserName = connTemp.SysUserName;
             }
-            if (SysDBInfoVM.IsWindowsAuthentication)
-            {
-                ConnectionString = "Data Source=" + SysDBInfoVM.SysdataSource + ";trusted_Connection=True;" +
-                                     "Initial Catalog=master;" +
-                                     "connect Timeout=60;";
-            }
-            else
-            {
 
-                ConnectionString = "Data Source=" + SysDBInfoVM.SysdataSource + ";" +
-                                        "Initial Catalog=master;" +
-                                        "user id=" + SysDBInfoVM.SysUserName + ";" +
-                                        "password=" + SysDBInfoVM.SysPassword + ";" +
-                                        "connect Timeout=60;";
-            }
+            ConnectionString = "Data Source=" + SysDBInfoVM.SysdataSource + ";" +
+                                    "Initial Catalog=master;" +
+                                    "user id=" + SysDBInfoVM.SysUserName + ";" +
+                                    "password=" + SysDBInfoVM.SysPassword + ";" +
+                                    "connect Timeout=60;";
+
             SqlConnection conn = new SqlConnection(ConnectionString);
 
 

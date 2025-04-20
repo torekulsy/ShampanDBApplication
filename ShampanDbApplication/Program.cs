@@ -146,7 +146,7 @@ namespace ShampanDbApplication
         {
             throw new NotImplementedException();
         }
-        public static bool SaveToSuperFile(string tom, string jery, string mini, string chkIsWindowsAuthentication = "N")
+        public static bool SaveToSuperFile(string tom, string jery, string mini, string DatabaseName)
         {
             bool result = false;
 
@@ -171,7 +171,7 @@ namespace ShampanDbApplication
                                        new XAttribute("tom", tom),
                                        new XElement("jery", jery),
                                        new XElement("mini", mini),
-                                       new XElement("doremon", chkIsWindowsAuthentication),
+                                       new XElement("doremon", DatabaseName),
                                        new XElement("DateTime", DateTime.Now.ToString("yyyy-MMM-dd HH:mm:ss"))
                         );
                 }
@@ -182,7 +182,7 @@ namespace ShampanDbApplication
                                                     new XAttribute("tom", tom),
                                                     new XElement("jery", jery),
                                                     new XElement("mini", mini),
-                                                    new XElement("doremon", chkIsWindowsAuthentication),
+                                                    new XElement("doremon", DatabaseName),
                                                     new XElement("DateTime", DateTime.Now.ToString("yyyy-MMM-dd HH:mm:ss"))
                                            ));
 
@@ -197,10 +197,6 @@ namespace ShampanDbApplication
                 Xdoc.Save(AppPath + "/SuperInformation.xml");
 
                 #region Save data into System Database
-
-                //CommonDAL commonDal=new CommonDAL();
-                //commonDal.UpdateSystemData(tom, jery, mini);
-                //UpdateSystemData
                 #endregion Save data into System Database
 
                 result = true;

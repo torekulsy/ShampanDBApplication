@@ -12,3 +12,8 @@ D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\bin\Debug\PFViewModel.pdb
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.dll
 D:\PF\ShampanDbApplication\ShampanDbApplication\ShampanDbApplication\PFViewModel\obj\Debug\PFViewModel.pdb
+D:\ShampanDBApplication\PFViewModel\bin\Debug\PFViewModel.dll
+D:\ShampanDBApplication\PFViewModel\bin\Debug\PFViewModel.pdb
+D:\ShampanDBApplication\PFViewModel\obj\Debug\PFViewModel.csprojResolveAssemblyReference.cache
+D:\ShampanDBApplication\PFViewModel\obj\Debug\PFViewModel.dll
+D:\ShampanDBApplication\PFViewModel\obj\Debug\PFViewModel.pdb

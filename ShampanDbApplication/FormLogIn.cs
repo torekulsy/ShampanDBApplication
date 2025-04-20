@@ -101,5 +101,17 @@ namespace ShampanDbApplication
         {
             this.Close();
         }
+
+        private void FormLogIn_Load(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(Program.AppPath + "/SuperInformation.xml"))
+            {
+                btnLogIn.Visible = false;
+            }
+            else
+            {
+                btnLogIn.Visible = true;
+            }
+        }
     }
 }

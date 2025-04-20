@@ -33,9 +33,9 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLogIn = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLogIn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,20 +87,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
             // 
-            // btnLogIn
+            // button1
             // 
-            this.btnLogIn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 9.75F);
-            this.btnLogIn.Image = global::ShampanDbApplication.Properties.Resources.administrator;
-            this.btnLogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogIn.Location = new System.Drawing.Point(97, 31);
-            this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(148, 30);
-            this.btnLogIn.TabIndex = 131;
-            this.btnLogIn.Text = "&Super Information";
-            this.btnLogIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogIn.UseVisualStyleBackColor = false;
-            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.button1.Image = global::ShampanDbApplication.Properties.Resources.logout;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(97, 152);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 30);
+            this.button1.TabIndex = 213;
+            this.button1.Text = "&Exit";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnExit
             // 
@@ -119,22 +121,20 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button1
+            // btnLogIn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F);
-            this.button1.Image = global::ShampanDbApplication.Properties.Resources.logout;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(97, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 30);
-            this.button1.TabIndex = 213;
-            this.button1.Text = "&Exit";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogIn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.btnLogIn.Image = global::ShampanDbApplication.Properties.Resources.administrator;
+            this.btnLogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogIn.Location = new System.Drawing.Point(97, 31);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(148, 30);
+            this.btnLogIn.TabIndex = 131;
+            this.btnLogIn.Text = "&Super Information";
+            this.btnLogIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // pictureBox1
             // 
@@ -167,6 +167,7 @@
             this.Name = "FormLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LogIn";
+            this.Load += new System.EventHandler(this.FormLogIn_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
