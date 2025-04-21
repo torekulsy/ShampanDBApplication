@@ -40,17 +40,9 @@ namespace PFServer.Library
             try
             {
                 #region open connection and transaction
-                if (IsWindowsAuthentication)
-                {
-                    ConnectionString = "Data Source=" + Datasource + ";Trusted_Connection=True;" +
-                             ";connect Timeout=120;";
-                }
-                else
-                {
-                    ConnectionString = "Data Source=" + Datasource + ";" +
-                                "user id=" + userName + ";password=" + Password + ";connect Timeout=120;";
-                }
 
+                ConnectionString = "Data Source=" + Datasource + ";" +
+                                  "user id=" + userName + ";password=" + Password + ";connect Timeout=120;";
                 conn = new SqlConnection(ConnectionString);
 
                 if (conn.State != ConnectionState.Open)

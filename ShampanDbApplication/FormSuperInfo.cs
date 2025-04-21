@@ -121,7 +121,7 @@ namespace ShampanDbApplication
                   
                     DataSave();
 
-                    MessageBox.Show("Data save successfully", this.Text);
+                   // MessageBox.Show("Data save successfully", this.Text);
 
                 }
 

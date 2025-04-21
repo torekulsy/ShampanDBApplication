@@ -62,7 +62,6 @@ D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFViewModel.dll
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Library.pdb
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFServer.Ordinary.pdb
 D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\PFViewModel.pdb
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csprojResolveAssemblyReference.cache
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormCompanyProfile.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormLogIn.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.FormSuperInfo.resources
@@ -70,3 +69,6 @@ D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Form
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIMainInterface.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Properties.Resources.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.GenerateResource.Cache
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.AssemblyReference.cache
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.CoreCompileInputs.cache
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanD.491FCF93.Up2Date

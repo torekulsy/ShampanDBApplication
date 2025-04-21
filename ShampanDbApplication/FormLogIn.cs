@@ -107,10 +107,12 @@ namespace ShampanDbApplication
             if (System.IO.File.Exists(Program.AppPath + "/SuperInformation.xml"))
             {
                 btnLogIn.Visible = false;
+                lblMessage.Text = "Please delete SuperInformation.xml";
             }
             else
             {
                 btnLogIn.Visible = true;
+                lblMessage.Text = "";
             }
         }
     }

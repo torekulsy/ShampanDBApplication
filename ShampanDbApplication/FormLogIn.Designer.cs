@@ -34,9 +34,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -75,10 +75,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblMessage);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.progressBar1);
-            this.groupBox1.Controls.Add(this.btnExit);
             this.groupBox1.Controls.Add(this.btnLogIn);
             this.groupBox1.Location = new System.Drawing.Point(10, 122);
             this.groupBox1.Name = "groupBox1";
@@ -104,23 +104,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Font = new System.Drawing.Font("Tahoma", 9.75F);
-            this.btnExit.Image = global::ShampanDbApplication.Properties.Resources.database_process;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(97, 88);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(148, 30);
-            this.btnExit.TabIndex = 132;
-            this.btnExit.Text = "&Create Database";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -131,7 +114,7 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(148, 30);
             this.btnLogIn.TabIndex = 131;
-            this.btnLogIn.Text = "&Super Information";
+            this.btnLogIn.Text = "&Create Database";
             this.btnLogIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -145,6 +128,17 @@
             this.pictureBox1.TabIndex = 214;
             this.pictureBox1.TabStop = false;
             // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblMessage.Location = new System.Drawing.Point(71, 84);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(41, 16);
+            this.lblMessage.TabIndex = 214;
+            this.lblMessage.Text = "label1";
+            // 
             // FormLogIn
             // 
             this.AcceptButton = this.btnLogIn;
@@ -152,7 +146,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(350, 400);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
@@ -181,10 +174,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnLogIn;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
