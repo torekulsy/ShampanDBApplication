@@ -7,19 +7,19 @@
       "RelativeMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|solutionrelative:shampandbapplication\\formsuperinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7C1EE59-F518-4B9D-893E-AA90F12DD032}|PFServer.Library\\PFServer.Library.csproj|d:\\shampandbapplication\\pfserver.library\\commondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7C1EE59-F518-4B9D-893E-AA90F12DD032}|PFServer.Library\\PFServer.Library.csproj|D:\\ShampanDBApplication\\pfserver.library\\commondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7C1EE59-F518-4B9D-893E-AA90F12DD032}|PFServer.Library\\PFServer.Library.csproj|solutionrelative:pfserver.library\\commondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|d:\\shampandbapplication\\shampandbapplication\\formsuperinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|D:\\ShampanDBApplication\\shampandbapplication\\formsuperinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|solutionrelative:shampandbapplication\\formsuperinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|d:\\shampandbapplication\\shampandbapplication\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|D:\\ShampanDBApplication\\shampandbapplication\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|solutionrelative:shampandbapplication\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|d:\\shampandbapplication\\shampandbapplication\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|D:\\ShampanDBApplication\\shampandbapplication\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC9BBB98-FC05-495F-9BA1-42EF00838265}|ShampanDbApplication\\ShampanDbApplication.csproj|solutionrelative:shampandbapplication\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "PFServer.Library\\CommonDAL.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T03:42:51.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T03:42:51.242Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "ShampanDbApplication\\FormSuperInfo.cs",
               "ToolTip": "D:\\ShampanDBApplication\\ShampanDbApplication\\FormSuperInfo.cs",
               "RelativeToolTip": "ShampanDbApplication\\FormSuperInfo.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAQwEcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwD0AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T03:36:29.163Z",
               "EditorCaption": ""
@@ -80,8 +79,7 @@
               "RelativeToolTip": "ShampanDbApplication\\FormLogIn.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAgwFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T03:33:51.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T03:33:51.731Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "ToolTip": "D:\\ShampanDBApplication\\ShampanDbApplication\\FormLogIn.cs [Design]",
               "RelativeToolTip": "ShampanDbApplication\\FormLogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T03:32:06.171Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-21T03:32:06.171Z"
             }
           ]
         }
