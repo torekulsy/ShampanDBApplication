@@ -69,6 +69,4 @@ D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Form
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIMainInterface.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Properties.Resources.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.GenerateResource.Cache
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.AssemblyReference.cache
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.CoreCompileInputs.cache
-D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanD.491FCF93.Up2Date
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csprojResolveAssemblyReference.cache
