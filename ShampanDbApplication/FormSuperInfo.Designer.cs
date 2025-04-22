@@ -182,7 +182,7 @@
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Location = new System.Drawing.Point(264, 270);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(97, 35);
+            this.btnExit.Size = new System.Drawing.Size(94, 35);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Back";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

@@ -33,10 +33,10 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblMessage = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +87,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
             // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblMessage.Location = new System.Drawing.Point(94, 77);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(42, 16);
+            this.lblMessage.TabIndex = 214;
+            this.lblMessage.Text = "label1";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -127,17 +138,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(257, 50);
             this.pictureBox1.TabIndex = 214;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage.Location = new System.Drawing.Point(71, 84);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(41, 16);
-            this.lblMessage.TabIndex = 214;
-            this.lblMessage.Text = "label1";
             // 
             // FormLogIn
             // 

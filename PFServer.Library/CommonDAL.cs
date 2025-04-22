@@ -3837,7 +3837,7 @@ INSERT [dbo].[COATypeOfReport] ([Id], [TypeOfReportSL], [TypeOfReportShortName],
 GO
 SET IDENTITY_INSERT [dbo].[Company] ON 
 
-INSERT [dbo].[Company] ([Id], [Code], [Name], [Address], [District], [Division], [Country], [City], [PostalCode], [Phone], [Mobile], [Fax], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TaxId], [RegistrationNumber], [Mail], [NumberOfEmployees], [YearStart], [Year], [VATNo]) VALUES (1, N'SSL0', N'Symphony Softtech Ltd', N'Tridhara Tower (2nd Floor), 67, West Panthapath, Lake Circus, Kalabagan, Dhaka-1205', N'Dhaka', N'Dhaka', N'Bangladesh', N'Dhaka', N'1205', N'02-9611894-5', N'A', N'A', N'A', 1, 0, N'A', N'A', N'A', N'admin', N'20250116125617', N'192.168.15.100', N'Tax id', N'001976146-0402', N'symphonysoftt.com', 1500, N'20200701', N'2021', N'0')
+INSERT [dbo].[Company] ([Id], [Code], [Name], [Address], [District], [Division], [Country], [City], [PostalCode], [Phone], [Mobile], [Fax], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TaxId], [RegistrationNumber], [Mail], [NumberOfEmployees], [YearStart], [Year], [VATNo]) VALUES (1, N'SSL0', N'Symphony Softtech Ltd', N'Tridhara Tower (2nd Floor), 67, West Panthapath, Lake Circus, Kalabagan, Dhaka-1205', N'Dhaka', N'Dhaka', N'Bangladesh', N'Dhaka', N'1205', N'02-9611894-5', N'A', N'A', N'A', 1, 0, N'A', N'A', N'A', N'admin', N'20250116125617', N'192.168.15.100', N'Tax id', N'001976146-0402', N'symphonysoftt.com', 1500,CAST(CAST(YEAR(DATEADD(YEAR, -1, GETDATE())) AS VARCHAR(4)) + '0701' AS VARCHAR(8)),YEAR(DATEADD(YEAR, -0, GETDATE())),N'0')
 SET IDENTITY_INSERT [dbo].[Company] OFF
 GO
 INSERT [dbo].[Department] ([Id], [BranchId], [Code], [Name], [OrderNo], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom]) VALUES (N'1_1', 1, N'DEV', N'Development', 7, N'Test', 1, 0, N'Admin', N'20250320095411', N'', NULL, NULL, NULL)
@@ -10249,7 +10249,7 @@ GO
                        
 SET IDENTITY_INSERT [dbo].[Company] ON 
 
-INSERT [dbo].[Company] ([Id], [Code], [Name], [Address], [District], [Division], [Country], [City], [PostalCode], [Phone], [Mobile], [Fax], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TaxId], [RegistrationNumber], [Mail], [NumberOfEmployees], [YearStart], [Year], [VATNo]) VALUES (1, N'TIB', N'TRANSPARENCY INTERNATIONAL BANGLADESH', N'Midas Centre (4th & 5th Floor), House # 05 Rd No. 27, Dhaka', N'Dhaka', N'Dhaka', N'Bangladesh', N'Dhaka', N'1209', N'02-9124788', N'-', N'(+880-2) 48113101', N'-', 1, 0, N'admin', N'A', N'local', N'admin', N'20160806', N'192.168.15.100', N'653140414249', N'-', N'info@ti-bangladesh.org', 500, N'20200701', N'2020', N'0')
+INSERT [dbo].[Company] ([Id], [Code], [Name], [Address], [District], [Division], [Country], [City], [PostalCode], [Phone], [Mobile], [Fax], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TaxId], [RegistrationNumber], [Mail], [NumberOfEmployees], [YearStart], [Year], [VATNo]) VALUES (1, N'SSL0', N'Symphony Softtech Ltd', N'Tridhara Tower (2nd Floor), 67, West Panthapath, Lake Circus, Kalabagan, Dhaka-1205', N'Dhaka', N'Dhaka', N'Bangladesh', N'Dhaka', N'1205', N'02-9611894-5', N'A', N'A', N'A', 1, 0, N'A', N'A', N'A', N'admin', N'20250116125617', N'192.168.15.100', N'Tax id', N'001976146-0402', N'symphonysoftt.com', 1500,CAST(CAST(YEAR(DATEADD(YEAR, -1, GETDATE())) AS VARCHAR(4)) + '0701' AS VARCHAR(8)),YEAR(DATEADD(YEAR, -0, GETDATE())),N'0')
 SET IDENTITY_INSERT [dbo].[Company] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Branch] ON 
@@ -12167,6 +12167,37 @@ GO
 
                     #region CreateTable Back
                     sqlText = @"
+CREATE TABLE [dbo].[Company](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Code] [nvarchar](20) NOT NULL,
+	[Name] [nvarchar](200) NOT NULL,
+	[Address] [varchar](500) NULL,
+	[District] [nvarchar](200) NULL,
+	[Division] [nvarchar](200) NULL,
+	[Country] [nvarchar](200) NULL,
+	[City] [nvarchar](200) NULL,
+	[PostalCode] [varchar](50) NULL,
+	[Phone] [nvarchar](100) NULL,
+	[Mobile] [nvarchar](100) NULL,
+	[Fax] [nvarchar](100) NULL,
+	[Remarks] [nvarchar](500) NULL,
+	[IsActive] [bit] NOT NULL,
+	[IsArchive] [bit] NOT NULL,
+	[CreatedBy] [nvarchar](20) NOT NULL,
+	[CreatedAt] [nvarchar](14) NOT NULL,
+	[CreatedFrom] [nvarchar](50) NOT NULL,
+	[LastUpdateBy] [nvarchar](20) NULL,
+	[LastUpdateAt] [nvarchar](14) NULL,
+	[LastUpdateFrom] [nvarchar](50) NULL,
+	[TaxId] [nvarchar](50) NULL,
+	[RegistrationNumber] [nvarchar](50) NULL,
+	[Mail] [nvarchar](50) NULL,
+	[NumberOfEmployees] [int] NOT NULL,
+	[YearStart] [nvarchar](20) NULL,
+	[Year] [nvarchar](20) NULL,
+	[VATNo] [nvarchar](20) NOT NULL
+) ON [PRIMARY]
+GO
 CREATE TABLE [dbo].[COAFinal](
 	[SL] [float] NOT NULL,
 	[TypeOfReport] [nvarchar](255) NULL,
@@ -12723,7 +12754,11 @@ GO
 
                     #region TableDefaultData Back
                     sqlText = @"
+SET IDENTITY_INSERT [dbo].[Company] ON 
 
+INSERT [dbo].[Company] ([Id], [Code], [Name], [Address], [District], [Division], [Country], [City], [PostalCode], [Phone], [Mobile], [Fax], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TaxId], [RegistrationNumber], [Mail], [NumberOfEmployees], [YearStart], [Year], [VATNo]) VALUES (1, N'SSL0', N'Symphony Softtech Ltd', N'Tridhara Tower (2nd Floor), 67, West Panthapath, Lake Circus, Kalabagan, Dhaka-1205', N'Dhaka', N'Dhaka', N'Bangladesh', N'Dhaka', N'1205', N'02-9611894-5', N'A', N'A', N'A', 1, 0, N'A', N'A', N'A', N'admin', N'20250116125617', N'192.168.15.100', N'Tax id', N'001976146-0402', N'symphonysoftt.com', 1500,CAST(CAST(YEAR(DATEADD(YEAR, -1, GETDATE())) AS VARCHAR(4)) + '0701' AS VARCHAR(8)),YEAR(DATEADD(YEAR, -0, GETDATE())),N'0')
+SET IDENTITY_INSERT [dbo].[Company] OFF
+GO
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (1, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Advance against maintenance service', N'A.2.10', N'Dr', N'PF', N'PF')
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (2, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Advance against PF Software', N'A.2.7', N'Dr', N'PF', N'PF')
 INSERT [dbo].[COAFinal] ([SL], [TypeOfReport], [GroupType], [GroupId], [AccountGroup], [AccountName], [AccountCode], [AccountNature], [TransactionType], [TransType]) VALUES (3, N'Balance Sheet', N'Assets', 1, N'Current Assets', N'Cash in hand', N'A.2.11', N'Dr', N'PF', N'PF')
@@ -12809,6 +12844,37 @@ GO
                     #region CreateTable Back
                     sqlText = @"
 
+CREATE TABLE [dbo].[Company](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Code] [nvarchar](20) NOT NULL,
+	[Name] [nvarchar](200) NOT NULL,
+	[Address] [varchar](500) NULL,
+	[District] [nvarchar](200) NULL,
+	[Division] [nvarchar](200) NULL,
+	[Country] [nvarchar](200) NULL,
+	[City] [nvarchar](200) NULL,
+	[PostalCode] [varchar](50) NULL,
+	[Phone] [nvarchar](100) NULL,
+	[Mobile] [nvarchar](100) NULL,
+	[Fax] [nvarchar](100) NULL,
+	[Remarks] [nvarchar](500) NULL,
+	[IsActive] [bit] NOT NULL,
+	[IsArchive] [bit] NOT NULL,
+	[CreatedBy] [nvarchar](20) NOT NULL,
+	[CreatedAt] [nvarchar](14) NOT NULL,
+	[CreatedFrom] [nvarchar](50) NOT NULL,
+	[LastUpdateBy] [nvarchar](20) NULL,
+	[LastUpdateAt] [nvarchar](14) NULL,
+	[LastUpdateFrom] [nvarchar](50) NULL,
+	[TaxId] [nvarchar](50) NULL,
+	[RegistrationNumber] [nvarchar](50) NULL,
+	[Mail] [nvarchar](50) NULL,
+	[NumberOfEmployees] [int] NOT NULL,
+	[YearStart] [nvarchar](20) NULL,
+	[Year] [nvarchar](20) NULL,
+	[VATNo] [nvarchar](20) NOT NULL
+) ON [PRIMARY]
+GO
 CREATE TABLE [dbo].[AdvanceTAX](
 	[Id] [int] NOT NULL,
 	[EmployeeId] [nvarchar](20) NOT NULL,
@@ -13951,7 +14017,10 @@ GO
 
                     #region TableDefaultData Back
                     sqlText = @"
-
+                    SET IDENTITY_INSERT [dbo].[Company] ON 
+                    INSERT [dbo].[Company] ([Id], [Code], [Name], [Address], [District], [Division], [Country], [City], [PostalCode], [Phone], [Mobile], [Fax], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [TaxId], [RegistrationNumber], [Mail], [NumberOfEmployees], [YearStart], [Year], [VATNo]) VALUES (1, N'SSL0', N'Symphony Softtech Ltd', N'Tridhara Tower (2nd Floor), 67, West Panthapath, Lake Circus, Kalabagan, Dhaka-1205', N'Dhaka', N'Dhaka', N'Bangladesh', N'Dhaka', N'1205', N'02-9611894-5', N'A', N'A', N'A', 1, 0, N'A', N'A', N'A', N'admin', N'20250116125617', N'192.168.15.100', N'Tax id', N'001976146-0402', N'symphonysoftt.com', 1500,CAST(CAST(YEAR(DATEADD(YEAR, -1, GETDATE())) AS VARCHAR(4)) + '0701' AS VARCHAR(8)),YEAR(DATEADD(YEAR, -0, GETDATE())),N'0')
+                    SET IDENTITY_INSERT [dbo].[Company] OFF
+                    GO
                     SET IDENTITY_INSERT [dbo].[Schedule1SalaryMonthlies] ON 
 
                     INSERT [dbo].[Schedule1SalaryMonthlies] ([Id], [TaxSlabId], [EmployeeId], [ProjectId], [DepartmentId], [SectionId], [DesignationId], [FiscalYearId], [Year], [FiscalYearDetailId], [Line1A], [Line1B], [Line1C], [Line1Remarks], [Line2A], [Line2B], [Line2C], [Line2Remarks], [Line3A], [Line3B], [Line3C], [Line3Remarks], [Line4A], [Line4B], [Line4C], [Line4Remarks], [Line5A], [Line5B], [Line5C], [Line5Remarks], [Line6A], [Line6B], [Line6C], [Line6Remarks], [Line7A], [Line7B], [Line7C], [Line7Remarks], [Line8A], [Line8B], [Line8C], [Line8Remarks], [Line9A], [Line9B], [Line9C], [Line9Remarks], [Line10A], [Line10B], [Line10C], [Line10Remarks], [Line11A], [Line11B], [Line11C], [Line11Remarks], [Line12A], [Line12B], [Line12C], [Line12Remarks], [Line13A], [Line13B], [Line13C], [Line13Remarks], [Line14A], [Line14B], [Line14C], [Line14Remarks], [Line15A], [Line15B], [Line15C], [Line15Remarks], [Line16A], [Line16B], [Line16C], [Line16Remarks], [Line17A], [Line17B], [Line17C], [Line17Remarks], [Line18A], [Line18B], [Line18C], [Line18Remarks], [Line19A], [Line19B], [Line19C], [Line19Remarks], [Line20A], [Line20B], [Line20C], [Line20Remarks], [Line21A], [Line21B], [Line21C], [Line21Remarks], [Line22A], [Line22B], [Line22C], [Line22Remarks], [TotalIncomeAmount], [TotalExemptedAmount], [TotalTaxableAmount], [TotalTaxPayAmount], [FinalTaxAmount], [ProcessedTaxAmount], [FinalBonusTaxAmount], [Remarks], [IsActive], [IsArchive], [CreatedBy], [CreatedAt], [CreatedFrom], [LastUpdateBy], [LastUpdateAt], [LastUpdateFrom], [FiscalYearDetailIdTo], [TaxName], [TransactionType], [FinalTaxAmountMonthly], [RebateAmount], [TaxPaymentYearly], [InvestmentLimit], [RebateAmountMonthly]) VALUES (372, N'1', N'1_1', N'1_4', N'1_1', N'1_23', N'1_29', N'1_5', 2025, 1118, CAST(28405.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(28405.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(19884.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(19884.00 AS Decimal(18, 2)), NULL, CAST(6000.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(6000.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(4200.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(4200.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(2841.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(2841.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), NULL, CAST(61330.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(40887.00 AS Decimal(18, 2)), CAST(755.37 AS Decimal(18, 2)), CAST(416.67 AS Decimal(18, 2)), CAST(755.37 AS Decimal(18, 2)), NULL, NULL, 1, 0, N'ADMIN', N'20250122153349', N'', N'ADMIN', N'20250122153349', N'', 1118, N'Jan-25 to Jan-25', N'Salary', CAST(0.00 AS Decimal(18, 2)), CAST(1226.61 AS Decimal(18, 2)), CAST(40887.00 AS Decimal(18, 2)), CAST(8177.40 AS Decimal(18, 2)), CAST(1226.61 AS Decimal(18, 2)))
