@@ -70,3 +70,7 @@ D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.MDIM
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.Properties.Resources.resources
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csproj.GenerateResource.Cache
 D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.csprojResolveAssemblyReference.cache
+D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.exe.manifest
+D:\ShampanDBApplication\ShampanDbApplication\bin\Debug\ShampanDbApplication.application
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.exe.manifest
+D:\ShampanDBApplication\ShampanDbApplication\obj\Debug\ShampanDbApplication.application
